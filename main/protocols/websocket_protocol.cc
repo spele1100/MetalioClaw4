@@ -81,7 +81,11 @@ void WebsocketProtocol::CloseAudioChannel() {
 
 bool WebsocketProtocol::OpenAudioChannel() {
     Settings settings("websocket", false);
-    std::string url = settings.GetString("url");
+    // 用户在设置页手动输入的地址优先；否则用 OTA/激活流程下发的 url。
+    std::string url = settings.GetString("url_user");
+    if (url.empty()) {
+        url = settings.GetString("url");
+    }
     std::string token = settings.GetString("token");
     int version = settings.GetInt("version");
     if (version != 0) {

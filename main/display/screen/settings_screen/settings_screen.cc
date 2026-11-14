@@ -13,6 +13,7 @@
 #include "settings_charge_tab.h"
 #include "settings_common.h"
 #include "settings_language_tab.h"
+#include "settings_server_tab.h"
 #include "settings_standby_tab.h"
 #include "settings_volume_tab.h"
 
@@ -136,6 +137,9 @@ void BuildTabView(lv_obj_t* parent) {
     SettingsUpgradeTab_Build(tab_upgrade);
 #endif
 
+    lv_obj_t* tab_server = lv_tabview_add_tab(tv, I18n::T("服务器"));
+    SettingsServerTab_Build(tab_server);
+
     lv_obj_t* tab_bluetooth = lv_tabview_add_tab(tv, I18n::T("蓝牙"));
     SettingsBluetoothTab_Build(tab_bluetooth);
 
@@ -160,6 +164,7 @@ void OnBackClicked(lv_event_t* /*e*/) { OnSwipeBack(); }
 void OnScreenUnloaded(lv_event_t* /*e*/) {
     BluetoothScreen::ResetUi();
     SettingsChargeTab_Reset();
+    SettingsServerTab_Reset();
 #if CONFIG_ESP_HOSTED_ENABLED
     SettingsUpgradeTab_Reset();
 #endif

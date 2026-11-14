@@ -4392,6 +4392,78 @@
       "zh-CN": "正在读取版本…",
       "en-US": "Reading version…",
       "zh-TW": "正在讀取版本…"
+    },
+    {
+      "key": "SERVER_TAB",
+      "zh-CN": "服务器",
+      "en-US": "Server",
+      "zh-TW": "伺服器"
+    },
+    {
+      "key": "SERVER_HINT",
+      "zh-CN": "设置语音对话服务器地址",
+      "en-US": "Set voice chat server address",
+      "zh-TW": "設定語音對話伺服器位址"
+    },
+    {
+      "key": "SERVER_CURRENT_CUSTOM",
+      "zh-CN": "当前地址（自定义）",
+      "en-US": "Current address (custom)",
+      "zh-TW": "目前位址（自訂）"
+    },
+    {
+      "key": "SERVER_CURRENT_AUTO",
+      "zh-CN": "当前地址（服务器下发）",
+      "en-US": "Current address (server-provided)",
+      "zh-TW": "目前位址（伺服器下發）"
+    },
+    {
+      "key": "SERVER_NOT_SET",
+      "zh-CN": "未配置",
+      "en-US": "Not set",
+      "zh-TW": "未設定"
+    },
+    {
+      "key": "SERVER_EDIT",
+      "zh-CN": "修改地址",
+      "en-US": "Edit address",
+      "zh-TW": "修改位址"
+    },
+    {
+      "key": "SERVER_RESET",
+      "zh-CN": "恢复默认",
+      "en-US": "Reset to default",
+      "zh-TW": "恢復預設"
+    },
+    {
+      "key": "SERVER_INPUT_TITLE",
+      "zh-CN": "输入 WebSocket 地址",
+      "en-US": "Enter WebSocket address",
+      "zh-TW": "輸入 WebSocket 位址"
+    },
+    {
+      "key": "SERVER_INPUT_HINT",
+      "zh-CN": "例如 ws://192.168.1.10:8000/xiaozhi/v1/",
+      "en-US": "e.g. ws://192.168.1.10:8000/xiaozhi/v1/",
+      "zh-TW": "例如 ws://192.168.1.10:8000/xiaozhi/v1/"
+    },
+    {
+      "key": "SERVER_SAVE",
+      "zh-CN": "保存",
+      "en-US": "Save",
+      "zh-TW": "儲存"
+    },
+    {
+      "key": "SERVER_CANCEL",
+      "zh-CN": "取消",
+      "en-US": "Cancel",
+      "zh-TW": "取消"
+    },
+    {
+      "key": "SERVER_FOOT",
+      "zh-CN": "保存后下次对话连接生效",
+      "en-US": "Takes effect on the next connection",
+      "zh-TW": "儲存後下次對話連線生效"
     }
   ]
 }

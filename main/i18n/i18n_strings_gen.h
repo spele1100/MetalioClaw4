@@ -745,10 +745,22 @@ enum class Str : uint16_t {
     C5_FW_VERSION_UNAVAILABLE = 725,
     C5_FW_NEED_NETWORK = 726,
     C5_FW_REBOOT_HINT = 727,
-    C5_FW_READING_VERSION = 728
+    C5_FW_READING_VERSION = 728,
+    SERVER_TAB = 729,
+    SERVER_HINT = 730,
+    SERVER_CURRENT_CUSTOM = 731,
+    SERVER_CURRENT_AUTO = 732,
+    SERVER_NOT_SET = 733,
+    SERVER_EDIT = 734,
+    SERVER_RESET = 735,
+    SERVER_INPUT_TITLE = 736,
+    SERVER_INPUT_HINT = 737,
+    SERVER_SAVE = 738,
+    SERVER_CANCEL = 739,
+    SERVER_FOOT = 740
 };
 
-constexpr size_t kStringCount = 729;
+constexpr size_t kStringCount = 741;
 
 struct LocaleInfo {
     Locale id;
@@ -1494,6 +1506,18 @@ inline constexpr const char* kMsgIds[kStringCount] = {
     "请先连接网络",
     "更新完成后设备会自动重启",
     "正在读取版本…",
+    "服务器",
+    "设置语音对话服务器地址",
+    "当前地址（自定义）",
+    "当前地址（服务器下发）",
+    "未配置",
+    "修改地址",
+    "恢复默认",
+    "输入 WebSocket 地址",
+    "例如 ws://192.168.1.10:8000/xiaozhi/v1/",
+    "保存",
+    "取消",
+    "保存后下次对话连接生效",
 };
 
 inline constexpr const char* kStringsZhCN[kStringCount] = {
@@ -2226,6 +2250,18 @@ inline constexpr const char* kStringsZhCN[kStringCount] = {
     "请先连接网络",
     "更新完成后设备会自动重启",
     "正在读取版本…",
+    "服务器",
+    "设置语音对话服务器地址",
+    "当前地址（自定义）",
+    "当前地址（服务器下发）",
+    "未配置",
+    "修改地址",
+    "恢复默认",
+    "输入 WebSocket 地址",
+    "例如 ws://192.168.1.10:8000/xiaozhi/v1/",
+    "保存",
+    "取消",
+    "保存后下次对话连接生效",
 };
 
 inline constexpr const char* kStringsEnUS[kStringCount] = {
@@ -2958,6 +2994,18 @@ inline constexpr const char* kStringsEnUS[kStringCount] = {
     "Connect to network first",
     "Device reboots after update",
     "Reading version…",
+    "Server",
+    "Set voice chat server address",
+    "Current address (custom)",
+    "Current address (server-provided)",
+    "Not set",
+    "Edit address",
+    "Reset to default",
+    "Enter WebSocket address",
+    "e.g. ws://192.168.1.10:8000/xiaozhi/v1/",
+    "Save",
+    "Cancel",
+    "Takes effect on the next connection",
 };
 
 inline constexpr const char* kStringsZhTW[kStringCount] = {
@@ -3690,6 +3738,18 @@ inline constexpr const char* kStringsZhTW[kStringCount] = {
     "請先連線網路",
     "更新完成後裝置會自動重啟",
     "正在讀取版本…",
+    "伺服器",
+    "設定語音對話伺服器位址",
+    "目前位址（自訂）",
+    "目前位址（伺服器下發）",
+    "未設定",
+    "修改位址",
+    "恢復預設",
+    "輸入 WebSocket 位址",
+    "例如 ws://192.168.1.10:8000/xiaozhi/v1/",
+    "儲存",
+    "取消",
+    "儲存後下次對話連線生效",
 };
 
 inline constexpr const char* const* kLocaleTables[kLocaleCount] = {
