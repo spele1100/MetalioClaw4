@@ -3382,6 +3382,8 @@ CONFIG_ESP_VIDEO_ENABLE_SWAP_BYTE_RISCV=y
 # end of Video Data Preprocessing
 # end of Espressif Video Configuration
 
+# CONFIG_ESP_VIDEO_USE_CUSTOMIZED_ESP_H264_VERSION is not set
+
 #
 # Wi-Fi Remote
 #
